@@ -19,3 +19,10 @@ You have to add the `.env` file with the following variable, in order to recogni
 ```
 VITE_APP_API_BASE="http://localhost:3000"
 ```
+
+### Running commands:
+
+```js
+npm install
+npm run dev
+```
