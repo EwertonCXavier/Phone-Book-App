@@ -13,3 +13,9 @@ The project is divided in the following structure:
 - **utils**: Contains the form validation function;
 
 The libraries/dependencies used in this project are: styled-components, Tailwindcss, Shadcn/ui, React Hook Form, Zod and React Lucide Icons.
+
+You have to add the `.env` file with the following variable, in order to recognize the backend URL (API).
+
+```
+VITE_APP_API_BASE="http://localhost:3000"
+```

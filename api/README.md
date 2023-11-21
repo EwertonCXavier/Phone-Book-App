@@ -9,6 +9,7 @@ PG_CONTAINER_NAME=
 POSTGRES_DB=
 POSTGRES_USER=
 POSTGRES_PASSWORD=
+DATABASE_URL="postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5433/${POSTGRES_DB}?schema=public"
 ```
 
 Side Note: You can set the name you want for the variables above, the prisma URL is defined based on the content of it, instead of a mocked value.
