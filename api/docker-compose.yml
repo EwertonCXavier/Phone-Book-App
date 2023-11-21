@@ -4,13 +4,13 @@ services:
       context: .
       dockerfile: Dockerfile
     image: "soap-api"
-    container_name: soap
+    container_name: ${PG_CONTAINER_NAME}
     environment:
-      POSTGRES_DB: soap_contact
-      POSTGRES_USER: soap
-      POSTGRES_PASSWORD: soap
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - soap_contact:/data/soap_contact
+      - ${POSTGRES_DB}:/data/${POSTGRES_DB}
     ports:
       - "5433:5432"
     restart: unless-stopped
