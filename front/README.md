@@ -1,4 +1,4 @@
-# Phone App Book (Front end)
+# Phone Book App (Front end)
 
 This application section concerns the front end of the challenge provided by SOAP Health, as the first step of the hiring process.
 
